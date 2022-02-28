@@ -1,0 +1,8 @@
+auto-save-list/
+places
+url/
+.DS_Store
+.git
+.gitmodules
+straight
+eln-cache
