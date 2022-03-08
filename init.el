@@ -15,7 +15,7 @@
 ;; macOS command key as meta key
 (setq mac-command-modifier 'meta)
 ;; make window maximized
-(add-hook 'window-setup-hook 'toggle-frame-maximized t)
+;; (add-hook 'window-setup-hook 'toggle-frame-maximized t)
 ;; remove backup files and auto saved files
 (setq make-backup-files nil)
 (setq auto-save-default nil)

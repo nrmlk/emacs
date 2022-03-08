@@ -32,12 +32,12 @@
 
 
 ;; Font and frame size
-(set-face-font 'default "Go Mono-16")
+(set-face-font 'default "SF Mono-13")
 (setq default-frame-alist
       (append (list '(width  . 72) '(height . 40)
                     '(vertical-scroll-bars . nil)
                     '(internal-border-width . 24)
-                    '(font . "Go Mono-16"))))
+                    '(font . "SF Mono-13"))))
 (set-frame-parameter (selected-frame)
                      'internal-border-width 24)
 
@@ -66,7 +66,7 @@
 
 ;; No fringe but nice glyphs for truncated and wrapped lines
 (fringe-mode '(0 . 0))
-(defface fallback '((t :family "Go Mono"
+(defface fallback '((t :family "SF Mono"
                        :inherit 'face-faded)) "Fallback")
 (set-display-table-slot standard-display-table 'truncation
                         (make-glyph-code ?… 'fallback))
@@ -259,12 +259,12 @@ background color that is barely perceptible."
                         :background (face-background 'default))
     (set-face-attribute 'face-critical nil :foreground "#ffffff"
                                            :background "#ff6347")
-    (set-face-attribute 'face-popout nil :foreground "#272727"
+    (set-face-attribute 'face-popout nil :foreground "#272727")
                                          :background "#fdf0cc")
     (set-face-attribute 'face-strong nil :foreground "#272727"
                                          :weight 'regular)
     (set-face-attribute 'face-salient nil :foreground "#272727"
-                                          :background "#c7c7c7")
+                                          :background "#e1e1e1")
     (set-face-attribute 'face-faded nil :foreground "#676767"
                                         :weight 'light)
     (set-face-attribute 'face-subtle nil :background "#676767")
